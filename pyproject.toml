@@ -1,7 +1,7 @@
 [project]
 name = "claude-capstone"
 version = "0.1.0"
-description = "capstone project for Agenti AI System desing Course"
+description = "capstone project for Agentic AI System desingn Course"
 authors = [
     {name = "aekkasathvik",email = "aekkasathvik2002@gmail.com"}
 ]
@@ -14,7 +14,12 @@ dependencies = [
     "pydantic (>=2.13.5,<3.0.0)"
 ]
 
+[tool.poetry]
+packages = [{include = "Educosys_Claude"}]
 
+
+[tool.poetry.scripts]
+educosys_claude = "Educosys_Claude.main:run"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
