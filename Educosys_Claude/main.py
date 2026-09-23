@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.prompt import Prompt
 
 
-from Educosys_claude.Observability.logger import get_logger
+from educosys_claude.observability.logger import get_logger
 # Load .env before anything else — all modules read env vars after this
 load_dotenv()
 console = Console()
