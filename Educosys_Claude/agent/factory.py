@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 
 from educosys_claude.llm.factory import get_llm
-from educosys_claude.agent.tools import search_codebase
+from educosys_claude.tools.retriver import search_codebase
 from educosys_claude.observability.logger import get_logger
 
 
